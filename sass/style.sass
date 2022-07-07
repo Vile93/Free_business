@@ -1,0 +1,271 @@
+@font-face
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Font/GothamBold.ttf');
+
+header
+    .row
+        height: 100px
+        align-items: center
+nav
+    height: 100%
+    .menu
+        margin: 0
+        list-style-type: none
+        width: 100%
+        height: 100%
+        display: inline-flex
+        justify-content: space-between
+        &_item
+            height: 35px
+            line-height: 35px
+            padding: 0 21px
+            transition: 1s all
+            &:hover
+                background-color: #ffbb42
+                border-radius: 2px
+                a
+                    color: #fff
+        &_link
+            color:#868686
+            font-size: 14px
+            text-decoration: none
+            font-family: 'Lato'
+            text-transform: uppercase
+.logo
+    display: flex
+    justify-content: center
+.promo
+    position: relative
+    min-height: 700px
+    padding: 110px 0 350px 0
+    background-color:#709dca
+    text-align: center
+    color: #fff
+    &_title, &_subtitle
+        color: #fff !important
+    &_wrapper
+        margin-top: 33px
+        padding-left: 40px
+        padding-right: 40px
+    &_form
+        position: relative
+        .form-control,.btn
+            width: 100%
+            height: 100%
+        .form-control
+            padding-left: 30px
+    button
+        font-family: 'Open Sans', sans-serif
+        color: #fff
+        font-size: 14px
+        text-transform: uppercase
+    &_label
+        position: relative 
+        width: 100%
+        height: 50px
+        i
+            position: absolute
+            top: 50%
+            left: 10px
+            transform: translate3d(0,-50%,0)   
+            color: #6e6e6e
+            font-size: 13px
+    &_laptop
+        position: absolute
+        left: 50%
+        bottom: -80px
+        transform: translateX(-50%)
+        width: 840px
+.promo_title, .service_title, .about_rightside_title, .price_title, .work_title
+    font-family: 'Gotham', sans-serif
+    font-size: 30px
+    text-transform: uppercase
+    line-height: 30px
+    margin: 0
+    color: #394b50
+.promo_subtitle,.service_subtitle, .price_subtitle, .work_subtitle
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    font-weight: 300
+    color: #75888d
+.service
+    min-height: 930px
+    padding: 205px 0 160px 0
+    &_title, &_subtitle
+        text-align: center
+    &_subtitle
+        font-weight: normal
+    .row
+        .col-6:nth-child(2n)
+            padding-left: 30px
+        .col-6:nth-child(2n+1)
+            padding-right: 30px
+    &_wrapper
+        margin-top: 90px
+        position: relative
+        min-height: 90px
+        &_img
+            font-size: 44px
+            position: absolute
+            top: 0
+            left: 0
+            color: #709dca
+            &:hover
+                color: #f6772c
+        &_text
+            padding-left: 70px
+            &_title
+                font-family: 'Lato', sans-serif
+                font-weight: bold
+                color: #394b50
+                line-height: 16px
+                text-transform: uppercase
+            &_descr
+                margin-top: 20px
+                color: #7b7b7b
+    &_wrapper:not(.service_first)
+        margin-top: 80px
+.about
+    position: relative
+    height: 620px
+    color: #fff
+    background-color: #ffc155
+    &_img
+        position: absolute
+        width: 50vw
+        height: 100%
+    &_rightside
+        position: relative
+        display: inline-block
+        margin-left: calc(50vw + 80px)
+        margin-top: 164px
+        &_title
+            color: #fff !important
+        &_descr
+            width: 505px
+            font-size: 13px
+            font-family: 'Open Sans'
+            margin: 30px 0
+        &_btn
+            width: 145px
+            height: 45px
+            background-color: rgba(0, 0, 0, 0)
+            border: solid 1px #e7ad48
+            border-radius: 2px 
+            color: #fff
+            font-size: 14px
+            text-transform: uppercase
+.price
+    min-height: 900px
+    padding: 135px 0 165px 0
+    background-color:#e7edf3
+    text-align: center
+    &_title
+        color: #394b50
+    &_subtitle
+        color: #75888d
+    .row
+        height: 500px
+        margin-top: 50px
+        align-items: center
+        .col:nth-child(2n+1)
+            background-color: #fff
+            border-radius: 3px
+            border: solid 1px #ccd5df
+            height: 440px
+        .col:nth-child(2n)
+            height: 500px
+            border-radius: 3px
+            background-color: #709dca
+            .price_wrapper
+                &_plan, &_dollar, &_month
+                    color: #fff
+                hr
+                    background-color: #e2e9f0
+                &_benefit
+                    color: #c2e1ff
+        .col
+            display: flex
+            justify-content: center
+            align-items: center
+    &_wrapper
+        text-transform: uppercase
+        &_plan
+            font-family: 'Lato'
+            font-size: 25px
+        &_dollar
+            color: #ffbb42
+            font-family: 'Lato'
+            font-weight: bold
+            font-size: 60px
+            line-height: 70px
+            margin-top: 20px
+        &_month, &_plan
+            color:#818b95
+        &_benefit
+            color: #b5bbc1
+        &_month
+            font-weight: 300
+            font-size: 20px
+            line-height: 20px
+            margin-bottom: 30px
+        hr
+            width: 330px
+            height: 1px
+            background-color: #8eb8e2
+        &_benefit
+            font-size: 14px
+            line-height: 14px
+        &_btn
+            width: 130px
+            height: 42px
+            border: none
+            border-radius: 2px
+            background-color: #ffbb42
+            color: #fff
+            text-transform: uppercase
+            margin-top: 35px
+.work
+    min-height: 860px
+    text-align: center
+    padding: 150px 0
+    &_wrapper
+        height: 270px
+        text-align: center
+        margin-top: 110px
+        i
+            position: relative
+            font-size: 60px
+            color: #709dca
+            .work_wrapper_arrow
+                position: absolute
+                left: 123px
+                top: -40px
+            .work_wrapper_arrow_down
+                position: absolute
+                left: 123px
+                bottom: -40px
+                transform: rotate(180deg)
+            &:hover
+                color:#f6772c
+        &_title
+            font-family: 'Lato'
+            font-weight: bold
+            font-size: 20px
+            line-height: 20px
+            text-transform: uppercase
+            margin-top: 80px
+        &_descr
+            font-family: 'Open Sans'
+            font-size: 16px
+            color: #7b7b7b
+            margin-top: 30px
+    &_btn
+        width: 165px
+        height: 45px
+        border: none
+        border-radius: 2px
+        background-color: #ffbb42
+        color:#fff
+        text-transform: uppercase
+        margin-top: 90px
