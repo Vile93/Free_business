@@ -1,7 +1,11 @@
 @font-face
-    font-family: Gotham;
-    src: url('../fonts/Gotham-Font/GothamBold.ttf');
-
+    font-family: Gotham
+    src: url('../fonts/Gotham-Font/GothamBold.ttf')
+@font-face
+    font-family: Brandon Grotesque
+    src: url('fonts/Brandon_Grotesque/BrandonGrotesque-Bold.ttf')
+    font-weight: bold
+    font-style: normal
 header
     .row
         height: 100px
@@ -269,3 +273,53 @@ nav
         color:#fff
         text-transform: uppercase
         margin-top: 90px
+.client
+    min-height: 900px
+    padding: 140px 0 160px 0
+    background-color: #ffc155
+    .service_title
+        color: #fff
+    .service_subtitle
+        color: #fff
+    .row
+        margin-top: 60px
+    .col-6
+        margin-top: 20px
+    &_wrapper
+        position: relative
+        height: 241px
+        background-color: #fff
+        .quote_open, .quote_close
+            position: absolute
+            font-family: 'Brandon Grotesque'
+            font-size: 30px            
+        .quote_open
+            left: 160px
+            top: 45px
+        .quote_close
+            right: 230px
+            bottom: 60px
+            transform: scale(-1, 1)
+        &_img
+            width: 121px
+            height: 121px
+            margin: 43px 30px
+        &_flex
+            position: absolute
+            width: 344px
+            height: 100%
+            display: inline-flex
+            flex-direction: column
+            justify-content: center
+            &_descr
+                font-family: 'Open Sans'
+                font-size: 13px
+                color: #7b7b7b
+            &_prof
+                font-size: 14px
+                font-family: 'Lato'
+                color: #99a9ae
+                text-transform: uppercase
+                margin-top: 20px
+                span
+                    color: #f6772c
