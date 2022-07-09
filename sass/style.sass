@@ -1,3 +1,4 @@
+@import "mixins"
 @font-face
     font-family: Gotham
     src: url('../fonts/Gotham-Font/GothamBold.ttf')
@@ -14,6 +15,7 @@ nav
     height: 100%
     .menu
         margin: 0
+        padding: 0
         list-style-type: none
         width: 100%
         height: 100%
@@ -100,9 +102,9 @@ nav
     &_subtitle
         font-weight: normal
     .row
-        .col-6:nth-child(2n)
+        .service_col:nth-child(2n)
             padding-left: 30px
-        .col-6:nth-child(2n+1)
+        .service_col:nth-child(2n+1)
             padding-right: 30px
     &_wrapper
         margin-top: 90px
@@ -172,12 +174,12 @@ nav
         height: 500px
         margin-top: 50px
         align-items: center
-        .col:nth-child(2n+1)
+        .price_col:nth-child(2n+1)
             background-color: #fff
             border-radius: 3px
             border: solid 1px #ccd5df
             height: 440px
-        .col:nth-child(2n)
+        .price_col:nth-child(2n)
             height: 500px
             border-radius: 3px
             background-color: #709dca
@@ -188,7 +190,7 @@ nav
                     background-color: #e2e9f0
                 &_benefit
                     color: #c2e1ff
-        .col
+        .price_col
             display: flex
             justify-content: center
             align-items: center
@@ -283,7 +285,7 @@ nav
         color: #fff
     .row
         margin-top: 60px
-    .col-6
+    &_col
         margin-top: 20px
     &_wrapper
         position: relative
@@ -370,7 +372,6 @@ nav
         justify-content: space-around
         margin-top: 70px
         &_item
-            width: 100%
             display: flex
             align-items: center
             justify-content: center
@@ -415,3 +416,4 @@ nav
             font-family: 'Open Sans'
             font-size: 13px
             color: #fff
+@import "media"
