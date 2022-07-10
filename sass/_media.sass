@@ -1,8 +1,13 @@
+@import "mixins"
 @media (max-width: 1399px)
     nav
         .menu
             &_link
                 font-size: 12px
+    .work
+        &_wrapper 
+                &_arrow, &_arrow_down
+                    left: 110px !important
 @media (max-width: 1199px)
     nav
         .menu
@@ -17,6 +22,10 @@
     .price
         hr
             width: 280px
+    .work
+        &_wrapper 
+                &_arrow, &_arrow_down
+                    left: 88px !important
     .client
         &_wrapper
             .quote_open
@@ -46,6 +55,10 @@
         &_laptop
             width: 560px
             height: 300px
+    .service
+        &_wrapper
+            i
+                padding-left: 10px
     .about
         &_rightside
             margin-top: 50px
@@ -66,6 +79,8 @@
         &_wrapper
             &_descr
                 font-size: 12px
+            &_arrow, &_arrow_down
+                left: 58px !important
     .client
         &_wrapper
             margin-top: 20px
@@ -76,6 +91,9 @@
         .quote_close
             bottom: 80px
 @media (max-width: 767px)
+    nav
+        .menu
+            @include btn_hover_media_nav
     .promo
         min-height: 300px
         padding: 100px 0
@@ -90,15 +108,19 @@
         &_form
             padding: 1px
     .service
+        &_wrapper
+            i
+                @include btn_hover_media_other
         .row
             .service_col:nth-child(2n), .service_col:nth-child(2n+1)
                 padding: 0
     .about
         &_rightside
             margin-top: 30px
+            margin-left: 55vw
             &_descr
-                font-size: 12px
-                margin: 5px 0
+                font-size: 14px
+                margin: 10px 0
     .price
         min-height: 800px
         padding: 50px 0
@@ -113,14 +135,24 @@
             &_arrow, &_arrow_down
                 display: none
             i
+                @include btn_hover_media_other
                 font-size: 90px
             &_title
                 margin-top: 50px
                 font-size: 30px
             &_descr
                 font-size: 20px
+    .client
+        .quote_open
+            top: 40px
+        .quote_close
+            bottom: 60px
     .footer
         &_wrapper
             &_link
                 font-size: 10px
+        &_social
+            &_wrapper
+                i
+                    @include btn_hover_media_other
 
