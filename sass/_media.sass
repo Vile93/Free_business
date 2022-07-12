@@ -37,6 +37,7 @@
                 width: 260px
     .news
         &_contact
+            position: relative
             width: 100%
 @media (max-width: 991px)
     nav
@@ -91,6 +92,8 @@
         .quote_close
             bottom: 80px
 @media (max-width: 767px)
+    .anchor
+        top: -100px
     header
         position: fixed
         top: 0
@@ -223,6 +226,7 @@
         &_wrapper
             &_link
                 font-size: 10px
+                @include btn_hover_media_footer
         &_social
             &_wrapper
                 i
