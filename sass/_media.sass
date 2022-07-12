@@ -85,16 +85,88 @@
         &_wrapper
             margin-top: 20px
             &_flex
-                width: 65%
+                width: auto
         .quote_open
             top: 50px
         .quote_close
             bottom: 80px
 @media (max-width: 767px)
-    nav
-        .menu
-            @include btn_hover_media_nav
+    header
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100px
+        z-index: 10
+        background-color: rgba(255,255,255,1)
+        .logo
+            position: absolute
+            width: 50px
+            height: 50px
+            top: 50%
+            transform: translateY(-50%)
+        nav
+            .menu
+                @include btn_hover_media_nav
+                text-align: center
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                top: 0
+                left: -100%
+                width: 50vw
+                height: 100vh
+                background-color: rgba(0,0 ,0 , 0.8)
+                transition: all 1s
+                z-index: 10
+        .row
+            position: relative
+            input
+                display: none
+                &:checked ~ .hamburger
+                    span:first-child
+                        margin: 0
+                        transform: rotate(45deg)
+                    span:nth-child(2)
+                        display: none
+                    span:last-child
+                        margin-top: -3px
+                        transform: rotate(-45deg)
+                &:checked ~ nav > .menu
+                    left: 0%
+            .hamburger
+                z-index: -1
+                position: absolute
+                top: 50%
+                right: 20px
+                transform: translateY(-50%)
+                display: block
+                width: 50px
+                height: 100px
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                span:first-child
+                    margin-bottom: 10px
+                span:last-child
+                    margin-top: 10px
+                span
+                    width: 100%
+                    height: 3px
+                    background-color: #000
+                    transition: all 0.3s
+                &_check
+                    display: block
+                    width: 50px
+                    height: 50px
+                    position: absolute
+                    top: 50%
+                    right: 20px
+                    transform: translateY(-50%)
     .promo
+        margin-top: 100px
         min-height: 300px
         padding: 100px 0
         &_title
@@ -155,4 +227,51 @@
             &_wrapper
                 i
                     @include btn_hover_media_other
-
+@media (max-width: 575px)
+    header
+        .row
+            padding: 0 20px
+    .promo
+        &_laptop
+            height: auto
+            width: 80%
+            bottom: -150px
+    .about
+        &_img
+            display: none
+        &_rightside
+            margin: 0
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+    .price
+        .row
+            margin: 0
+    .client
+        .quote_open
+            top: 20px
+            left: 60px
+        .quote_close
+            right: 5px
+        &_wrapper
+            &_img
+                margin: 40px 5px 0 10px
+                width: 64px
+                height: 64px
+        &_col
+            padding: 0
+    .footer
+        &_wrapper
+            &_link
+                font-size: 7px
+        &_subfooter
+            &_text
+                font-size: 7px
+    @media (max-width:  440px)
+        .promo
+            &_laptop
+                bottom: -110px
+        

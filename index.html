@@ -19,9 +19,16 @@
         <div class="container">
             <div class="row">
                 <div class="logo col-1">
-                    <a href="#" class="logo link"><img src="/icons/Logo.png" alt="Logo" class="logo_img"></a>
+                    <a href="#" class="logo_link"><img src="/icons/Logo.png" alt="Logo" class="logo_img"></a>
                 </div>
-                <div class="col-xl-9  offset-xl-2 col-lg-10 offset-lg-1 col-md-11">
+                <div class="col-md-11 col-lg-10 offset-lg-1 col-xl-9 offset-xl-2">
+                    <label for="check-menu" class="hamburger_check"></label>
+                    <input type="checkbox" id="check-menu"">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <nav>
                         <ul class="menu">
                             <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
@@ -133,11 +140,11 @@
     </section>
     <section class="about">
         <img src="img/About_Us.jpg" alt="" class="about_img">
-            <div class="about_rightside">
-                <div class="about_rightside_title">ABout us</div>
-                <div class="about_rightside_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
-                <button class="about_rightside_btn">Read more</button>
-            </div>
+        <div class="about_rightside">
+            <div class="about_rightside_title">ABout us</div>
+            <div class="about_rightside_descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the ore recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+            <button class="about_rightside_btn">Read more</button>
+        </div>
     </section>
     <section class="price">
         <div class="container">
@@ -292,19 +299,19 @@
             <div class="service_subtitle">Lorem Ipsum is simply dummy Business industry</div>
             <form action="#">
                 <div class="promo_wrapper row">
-                    <div class="promo_form col-3 offset-1">
+                    <div class="promo_form col-4 col-md-3 offset-md-1">
                         <label class="promo_label">
                             <i class="fa-solid fa-user"></i>
                             <input class="form-control" type="text" placeholder="Full Name" aria-label="#" required>
                         </label>
                     </div>
-                    <div class="promo_form col-5">
+                    <div class="promo_form col-4 col-md-5">
                         <label class="promo_label">
                             <i class="fa-solid fa-envelope"></i>
                             <input class="form-control" type="text" placeholder="Email Address" aria-label="#" required>
                         </label>
                     </div>
-                    <div class="promo_form col-2">
+                    <div class="promo_form col-4 col-md-2">
                         <button type="submit" class="btn btn-warning">Subscribe now</button>
                     </div>
                 </div>
